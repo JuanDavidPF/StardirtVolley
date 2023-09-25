@@ -1,0 +1,16 @@
+{
+    "name": "StoredirtVolley.MovementControllers",
+    "rootNamespace": "StoredirtVolley.MovementControllers",
+    "references": [
+        "GUID:b792f0377fa74a246ab04ccd996945b4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+{
+    "name": "StoredirtVolley.PawnControllers",
+    "rootNamespace": "StoredirtVolley.PawnControllers",
+    "references": [
+        "GUID:e182a12719911f24aa85246a5d650d9b",
+        "GUID:b792f0377fa74a246ab04ccd996945b4",
+        "GUID:6f85eefbb5bd2eb4492f04dea5e42dcf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
