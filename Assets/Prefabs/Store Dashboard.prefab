@@ -1045,15 +1045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d864aec7d46c534dbaa9ed59bb9ed8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _articles:
-  - {fileID: 11400000, guid: 93f8b1a30d34219499bef25446558441, type: 2}
-  - {fileID: 11400000, guid: 4c0eead9c47a8ca48bee0f88ee63dcbf, type: 2}
-  - {fileID: 11400000, guid: 2c584f18d44c5a54eb78d6320d9f4ac0, type: 2}
-  - {fileID: 11400000, guid: 968d231441edb0544a9cf2e3f1df5916, type: 2}
-  - {fileID: 11400000, guid: 3f1dd536dc2f19e46ae1757e6036c172, type: 2}
-  - {fileID: 11400000, guid: 968d231441edb0544a9cf2e3f1df5916, type: 2}
-  - {fileID: 11400000, guid: b2afca9ba93e5e74f9fc355704e18621, type: 2}
-  - {fileID: 11400000, guid: 4b2b93d4328ba6041a72c787480cb2a7, type: 2}
   _exitButton: {fileID: 791245941564702900}
   _articleCard: {fileID: 2020232513493924517, guid: d56db9fa1e8257f4ab186deb5c7dda06, type: 3}
   _underwearContainer: {fileID: 791245941922313473}

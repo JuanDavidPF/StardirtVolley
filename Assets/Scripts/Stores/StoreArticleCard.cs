@@ -48,5 +48,5 @@ namespace StoredirtVolley
 
         }//Closes ValidateAffordability method
 
-    }//Closes StpreArtoclecard class
+    }//Closes StoreArticleCard class
 }//Closes namespace declaration

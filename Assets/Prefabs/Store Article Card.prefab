@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 2020232513493924517}
   - component: {fileID: 4736925570266933013}
   m_Layer: 5
-  m_Name: StoreArticleCard
+  m_Name: Store Article Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

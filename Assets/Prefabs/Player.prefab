@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 1338881412}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: e05e9fead77f18240becd1923aa47492, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -335,7 +335,7 @@ Animator:
   m_GameObject: {fileID: 2542252836618158297}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: aa91fe39a4cbab04aadee95575bb4535, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -499,6 +499,7 @@ MonoBehaviour:
   _underWearAnimator: {fileID: 1009203153403268498}
   _armorAnimator: {fileID: 7025028045140791283}
   _headAnimator: {fileID: 6818606741753084676}
+  _inventoryPanelPrefab: {fileID: 602735427114796143, guid: 745bb3d9bb07eaf4ea8bb9db0b3cdf99, type: 3}
 --- !u!114 &3755990260277942121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +738,7 @@ Animator:
   m_GameObject: {fileID: 7012578763662043022}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 3e60501276a65e5478c452f13d1e7530, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
