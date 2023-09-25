@@ -580,9 +580,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d65ac17f115714da077879bc10674e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _articles:
+  - {fileID: 11400000, guid: 2c584f18d44c5a54eb78d6320d9f4ac0, type: 2}
+  - {fileID: 11400000, guid: 968d231441edb0544a9cf2e3f1df5916, type: 2}
+  - {fileID: 11400000, guid: 3f1dd536dc2f19e46ae1757e6036c172, type: 2}
+  - {fileID: 11400000, guid: 46dd317e84c42754ab97db26e82de07f, type: 2}
+  - {fileID: 11400000, guid: b2afca9ba93e5e74f9fc355704e18621, type: 2}
+  - {fileID: 11400000, guid: 4b2b93d4328ba6041a72c787480cb2a7, type: 2}
+  - {fileID: 11400000, guid: 93f8b1a30d34219499bef25446558441, type: 2}
+  - {fileID: 11400000, guid: 4c0eead9c47a8ca48bee0f88ee63dcbf, type: 2}
   _interactionName: Buy
-  _storePanel: {fileID: 0}
-  _closeStorePanel: {fileID: 0}
+  _storePanelPrefab: {fileID: 791245941263897934, guid: 91d949c4b1940434c83bd2fc30a0b88c, type: 3}
 --- !u!210 &5671202826985372024
 SortingGroup:
   m_ObjectHideFlags: 0

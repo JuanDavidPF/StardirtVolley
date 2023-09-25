@@ -9,17 +9,16 @@ namespace StoredirtVolley
 {
     public class StoreKeeperController : MonoBehaviour, IInteractuable
     {
-
+        [SerializeField] private StoreArticle[] _articles;
         [SerializeField] private string _interactionName;
         private Interaction interaction;
 
-        [SerializeField] private GameObject _storePanel;
-        [SerializeField] private Button _closeStorePanel;
+        [SerializeField] private StoreDashboard _storePanelPrefab;
+        private StoreDashboard currentDashboard;
 
         private void Start()
         {
             interaction = new Interaction(_interactionName, HandleInteraction, FinishInteraction);
-            _closeStorePanel?.onClick.AddListener(CloseStorePanel);
 
         }//Closes Start method
 
@@ -28,23 +27,31 @@ namespace StoredirtVolley
         {
             interactor.OnInteractionStarted(interaction);
 
-            if (interactor.GetOwner().TryGetComponent(out PlayerController controller)) controller.enabled = false;
+            if (!_storePanelPrefab)
+            {
+                interaction.FinishInteraction();
+                return;
+            }
 
-            _storePanel?.gameObject.SetActive(true);
+            currentDashboard = Instantiate(_storePanelPrefab);
+
+            Transform interactorOwner = interactor.GetOwner();
+
+            if (interactorOwner.TryGetComponent(out PlayerController controller)) controller.enabled = false;
+
+            if (interactorOwner.TryGetComponent(out Inventory inventory))
+            {
+                currentDashboard.Init(inventory, _articles, interaction.FinishInteraction);
+            }
+
 
         }//Closes HandleInteraction method
 
-        public void CloseStorePanel()
-        {
-            interaction.FinishInteraction();
-
-        }//Closes CloseStorePanel method
 
         private void FinishInteraction(IInteractionManager interactor)
         {
             if (interactor.GetOwner().TryGetComponent(out PlayerController controller)) controller.enabled = true;
-            _storePanel?.gameObject.SetActive(false);
-
+            Destroy(currentDashboard.gameObject);
         }//Closes FinishInteraction method
 
         private void OnTriggerEnter(Collider other)
@@ -62,11 +69,6 @@ namespace StoredirtVolley
 
         }//Closes OnTriggerExit method
 
-        private void OnDestroy()
-        {
-            _closeStorePanel?.onClick.RemoveListener(CloseStorePanel);
-
-        }//Closes OnDestroy method
 
 
     }//Closes StoreKeeperController class

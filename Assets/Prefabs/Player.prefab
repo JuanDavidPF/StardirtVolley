@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coins: 0
+  _articles: []
   _underWearAnimator: {fileID: 1009203153403268498}
   _armorAnimator: {fileID: 7025028045140791283}
   _headAnimator: {fileID: 6818606741753084676}

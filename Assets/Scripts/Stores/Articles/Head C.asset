@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aec98da6dc309c468e78621841f400e, type: 3}
+  m_Name: Head C
+  m_EditorClassIdentifier: 
+  Type: 2
+  Thumbnail: {fileID: -1138982472, guid: 638504a321874a1498093a9d9331ec95, type: 3}
+  ArticleName: Head C
+  Price: 15
+  ArticleAnimator: {fileID: 22100000, guid: 50fcc213908c37e498e9b8de25a26b10, type: 2}
