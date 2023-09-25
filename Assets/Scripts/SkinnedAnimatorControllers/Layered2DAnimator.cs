@@ -6,21 +6,22 @@ namespace StoredirtVolley.SkinnedAnimatorControllers
     public class Layered2DAnimator : ISkinnedAnimatorController
     {
 
-        private Animator animator;
+        private Animator[] animators;
         private string currentDirection;
         private string currentState;
 
-        public Layered2DAnimator(Animator animator)
+        public Layered2DAnimator(params Animator[] animators)
         {
-            this.animator = animator;
+            this.animators = animators;
 
         }//Closes Layered2DAnimator Constructor
 
         public void SetState(string newState, string newDirection)
         {
-            if (!animator || (currentState == newState && currentDirection == newDirection)) return;
+            if (animators.Length == 0 || (currentState == newState && currentDirection == newDirection)) return;
 
-            animator.Play($"{newState}_{newDirection}");
+            foreach (var animator in animators) animator.Play($"{newState}_{newDirection}");
+
 
             currentState = newState;
 

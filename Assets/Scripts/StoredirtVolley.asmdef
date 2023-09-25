@@ -1,7 +1,11 @@
 {
     "name": "StoredirtVolley",
     "rootNamespace": "StoredirtVolley",
-    "references": [],
+    "references": [
+        "GUID:6f85eefbb5bd2eb4492f04dea5e42dcf",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:6d0b6d85e78d2d849871ace2e5e19023"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
