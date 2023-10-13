@@ -34,16 +34,6 @@ namespace StoredirtVolley.MovementControllers
 
         }//Closes PlayerMovementController Constructor
 
-
-        public void UpdateMovement()
-        {
-            if (!playerRigidBody || !playerTransform || !playerMovementStats) return;
-
-
-
-        }//Closes UpdateMovement method
-
-
         public void FixedUpdateMovement()
         {
             if (!playerRigidBody || !playerTransform || !playerMovementStats) return;
@@ -59,6 +49,18 @@ namespace StoredirtVolley.MovementControllers
             }
 
         }//Closes FixedUpdateMovement method
+
+
+        public void UpdateMovement()
+        {
+            if (!playerRigidBody || !playerTransform || !playerMovementStats) return;
+
+
+
+        }//Closes UpdateMovement method
+
+
+   
 
         public void LateUpdateMovement()
         {
